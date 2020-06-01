@@ -1,0 +1,8 @@
+
+input.ng-invalid.ng-touched  
+{  
+    border: 1px solid red;
+}
+.help-bpx {color: red;}
+
+input,.dropdown {padding: 5px;margin: 5px;}

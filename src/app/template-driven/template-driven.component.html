@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="row">
+    <div class="form_bg">
+      <form #regForm='ngForm' (ngSubmit)="addUser(regForm)">
+        <h2 class="text-center">Template Driven Form Demo</h2>
+        <br />
+        <div class="form-group">
+          <input type="text" placeholder="First Name" name="firstname" ngModel>
+        </div>
+        <div class="form-group">
+          <input type="text" placeholder="Last Name" name="lastname" ngModel>
+        </div>
+        <div class="form-group">
+          <input type="email" id="email" placeholder="Email" name="email" email required ngModel #email="ngModel"
+            required>
+          <span class="help-bpx" *ngIf="email.touched && !email.valid ">Please enter valid email</span>
+        </div>
+        <div class="form-group">
+        </div>
+        <br />
+        <div class="align-center">
+          <button type="submit" class="btn btn-default" id="addUser">Add User</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
